@@ -6,7 +6,7 @@ const Card = (props) => {
   return (
      <div className="card">
         <img src={props.img}/>
-        <h1>{props.user}, {props.age}, </h1>
+        <h1>{props.user} <br></br> {props.age}</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, odio.</p>
         <button>View Profile</button>
 

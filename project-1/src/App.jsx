@@ -1,32 +1,16 @@
 import React from 'react'
-import {Bookmark} from 'lucide-react'
+import Card from './components/Card'
+import User from './components/User'
+
 
 const App = () => {
+  const arr = [1,2,3,4];
   return (
     <div className="parent">
-      <div className="card">
-        <div className="top">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM2yYz5k-8e_pjhAVTY296TIUvQVW7jFSAKw&s" alt=""></img>
-          <button>Save <Bookmark size={12} /></button>
-        </div>
-        <div className="center">
-          <h3>Amazon <span>5 days ago</span></h3>
-          <h2>Senior UI/UX Designer</h2>
-          <div className="tag">
-            <h4>Part Time</h4>
-            <h4>Senior Level </h4>
-          </div>
-
-        </div>
-        <div className="bottom">
-          <div className="info">
-           <h3>$120/hr</h3>
-            <p>Kathmandu, Nepal</p>
-          </div>
-          <button>Apply Now</button>
-          
-        </div>
-      </div>
+      {arr.map(function(ele){
+        return ele
+      })}
+      
     </div>
   )
 }
